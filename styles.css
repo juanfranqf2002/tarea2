@@ -71,3 +71,93 @@ nav ul ul ul li {
   top: -60px;
   left: 170px;
 }
+
+.clearfix {
+  clear: both; /*Cuando floten los elementos mantengan su sitio*/
+}
+
+/*Para el contenido*/
+#content {
+  float: left;
+  text-align: center;
+  width: calc(80% - 80px);
+  min-height: 500px; /*le daremos una altura minima a este elemento*/
+  background: whitesmoke;
+  padding: 40px;
+}
+
+#content article h1 {
+  text-align: left;
+  color: black;
+}
+#content article p {
+  margin-top: 10px;
+  text-align: justify;
+  color: black;
+}
+/*Imagenes en css*/
+.slider {
+  width: 100%;
+  height: 250px;
+  position: relative;
+  padding-top: 50px;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.slide:nth-child(1) {
+  background-image: url('imagen1.jpg');
+  animation: slide 12s infinite;
+}
+
+.slide:nth-child(2) {
+  background-image: url('imagen2.jpg');
+  animation: slide 12s infinite;
+  animation-delay: 3s;
+}
+
+.slide:nth-child(3) {
+  background-image: url('imagen3.jpg');
+  animation: slide 12s infinite;
+  animation-delay: 6s;
+}
+
+.slide:nth-child(4) {
+  background-image: url('imagen4.jpg');
+  animation: slide 12s infinite;
+  animation-delay: 9s;
+}
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/*Formato de Imagenes*/
+#cont1 {
+  border-radius: 15px;
+  border: 1px solid black;
+}
