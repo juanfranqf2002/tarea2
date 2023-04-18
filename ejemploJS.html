@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Mi página web interactiva</title>
+  </head>
+  <body>
+    <button onclick="saludar()">Saludar</button>
+    <p id="mensaje"></p>
+    <a href="index.html">Regresar</a>
+  </body>
+  <script>
+    function saludar() {
+      var nombre = prompt('¿Cómo te llamas?');
+      var mensaje = document.getElementById('mensaje');
+      mensaje.innerHTML = 'Hola, ' + nombre + '. ¡Bienvenido a mi página web!';
+    }
+  </script>
+</html>
