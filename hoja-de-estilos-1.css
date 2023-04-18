@@ -11,7 +11,7 @@ body {
 #container {
   /*Le damos un ancho*/
   /*width: 70%;*/
-  width: 1700px; /*Le damos un tamaño al contenedor*/
+  width: 1600px; /*Le damos un tamaño al contenedor*/
   margin: 0px auto; /*Le asignamos un margen al gontenedor de la pagia web*/
   border: 1px soli whitesmoke; /*Le asignamos un borde al contenedor de la pagina web*/
 }

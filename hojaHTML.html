@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="hoja-de-estilos-1.css" />
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <title class="titulo">HTML</title>
+      </header>
+      <!--Barra de Navegacion-->
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li>
+            <a href="#">Estándares Web</a>
+            <ul>
+              <li><a href="hojaHTML.html">HTML</a></li>
+              <li><a href="#">CSS</a></li>
+              <li><a href="#">JavaScript</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Ejemplos</a>
+            <ul>
+              <li><a href="#">Ejemplo HTML</a></li>
+              <li><a href="#">Ejemplo CSS</a></li>
+              <li><a href="#">Ejemplo JavaScript</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Acerca De</a></li>
+          <li><a href="#">Contactenos</a></li>
+        </ul>
+      </nav>
+
+      <!--Creamos una clase clearfix para que cuando se flote los elementos estos mantengan su sitio-->
+      <div class="clearfix"></div>
+
+      <section id="content">
+        <article>
+          <h2>Estructura de una página web</h2>
+          <h1>¿Cómo es?</h1>
+        </article>
+
+        <article>
+          <h2>Principales componentes/elementos de HTML</h2>
+          <h1>¿Cuales son?</h1>
+        </article>
+
+        <article>
+          <h2>Validadores de estándares HTML</h2>
+          <h1>¿Qué son?</h1>
+        </article>
+      </section>
+      <aside>
+        <h2>Estilos de Pagina</h2>
+        <button
+          onclick="cambiarEstilo('hoja-de-estilos-1.css')"
+          class="buttonE"
+        >
+          Estilo 1
+        </button>
+        <button
+          onclick="cambiarEstilo('hoja-de-estilos-2.css')"
+          class="buttonE"
+        >
+          Estilo 2
+        </button>
+      </aside>
+      <div class="clearfix"></div>
+      <footer>Juan Quizhpi WEB &COPY; 2023</footer>
+      <div class="clearfix"></div>
+    </div>
+  </body>
+  <script src="js/miarchivo.js"></script>
+
+  <!--Usamos esta parte para hacer el cambio entre ojas de estilo-->
+  <script>
+    function cambiarEstilo(nombreEstilo) {
+      var hojaDeEstilos = document.getElementsByTagName('link')[0];
+      hojaDeEstilos.href = nombreEstilo;
+    }
+  </script>
+</html>
