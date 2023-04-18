@@ -188,7 +188,7 @@ aside {
   width: calc(
     20% - 20px
   ); /*Funcion calc para ajustar ya que quito los 20px de cada lado*/
-  min-height: 2000px; /*altura minima para el aside*/
+  min-height: 1940px; /*altura minima para el aside*/
   background: #ecf0f1;
   padding-left: 20px; /*margenes por izquierda*/
   padding-top: 10px; /*Marjenes por derecha*/
@@ -205,6 +205,8 @@ footer {
 #fooFormulario {
   color: black;
   background-color: whitesmoke;
+  text-align: left;
+  height: 500px;
 }
 
 .buttonE {
