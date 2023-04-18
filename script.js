@@ -9,4 +9,4 @@ $(document).ready(function () {
   );
 });
 
-/**Funciones cambios de hoja */
+/**Funciones de validacion java script*/
