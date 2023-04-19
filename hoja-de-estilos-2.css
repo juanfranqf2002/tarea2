@@ -7,7 +7,10 @@ body {
   background: lightblue; /*Cambio de color del fondo*/
   font-family: 'Times New Roman', Times, serif; /*Cambiamos fuente de toda la pagina */
 }
-
+h3 {
+  text-align: left;
+  color: white;
+}
 #container {
   /*Le damos un ancho*/
   /*width: 70%;*/
