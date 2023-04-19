@@ -252,4 +252,37 @@ footer {
   transform: scale(1.2); /* zoom al 120% al pasar el ratón por encima */
 }
 
-/*Archivo CSS*/
+/*Archivo de ejemplos CSS*/
+/*Ejemplo 1*/
+.rotate-on-hover img {
+  transition: transform 0.5s;
+}
+
+.rotate-on-hover:hover img {
+  transform: rotate(360deg);
+}
+
+/**Ejemplo 2*/
+.scroll-text {
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 200px;
+  height: 50px;
+  overflow: hidden;
+}
+
+.scroll-text p {
+  animation: scroll 5s linear infinite;
+  white-space: nowrap;
+  margin: 0;
+  font-size: 20px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
