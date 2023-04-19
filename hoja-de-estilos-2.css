@@ -230,3 +230,24 @@ footer {
   box-shadow: 0px 3px 0px 0px #2471a3;
   transform: translateY(2px);
 }
+/*Imagen */
+.contIMG {
+  border-radius: 10px;
+  border: 1px solid black;
+  width: 500px; /* ancho del contenedor */
+  height: 500px; /* alto del contenedor */
+  overflow: hidden; /* ocultar lo que sobresale del contenedor */
+  display: inline-block;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.contIMG img {
+  width: 100%; /* ancho de la imagen */
+  height: 100%; /* alto de la imagen */
+  transition: transform 0.5s ease; /* transición suave */
+}
+
+.contIMG img:hover {
+  transform: scale(1.2); /* zoom al 120% al pasar el ratón por encima */
+}
