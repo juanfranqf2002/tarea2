@@ -1,11 +1,11 @@
 * {
   margin: 0px;
-  padding: 0px;
+  padding: 10px;
 }
 
 body {
   background: lightblue; /*Cambio de color del fondo*/
-  font-family: Arial, Helvetica, sans-serif; /*Cambiamos fuente de toda la pagina */
+  font-family: 'Times New Roman', Times, serif; /*Cambiamos fuente de toda la pagina */
 }
 
 #container {
@@ -13,26 +13,34 @@ body {
   /*width: 70%;*/
   width: 1600px; /*Le damos un tamaño al contenedor*/
   margin: 0px auto; /*Le asignamos un margen al gontenedor de la pagia web*/
-  border: 1px soli whitesmoke; /*Le asignamos un borde al contenedor de la pagina web*/
+  border: 7px soli rgb(142, 231, 142); /*Le asignamos un borde al contenedor de la pagina web*/
 }
 
 header {
-  height: 100px; /*Establecemos la altura del elemento en la pagina web*/
+  height: 150px; /*Establecemos la altura del elemento en la pagina web*/
   width: 100%; /*Asignamos un tamaño a la cabecera de la pagina web*/
-  margin: 0px; /*Le asignamos margenes a la cabecera de la pagina web*/
+  margin: 4px; /*Le asignamos margenes a la cabecera de la pagina web*/
 
   text-align: center; /*Hacemos que el texto de la cabecera se encuentre centrado*/
   line-height: 100px; /*Asignamos la altura de linea*/
-  color: black; /*Le damos a la letra un color blanco*/
-  background: white; /*cambiamos el color del fondo de la cabecera*/
+  color: grey(0, 0, 0, 0.637); /*Le damos a la letra un color blanco*/
+  background: rgb(
+    236,
+    187,
+    217
+  ); /*cambiamos el color del fondo de la cabecera*/
 }
 /**Barra de navegacion*/
 
 nav {
-  background: #2471a3; /*Le asignamos un color a la barra de navegacion*/
+  background: black; /*Le asignamos un color a la barra de navegacion*/
   margin-top: 20px;
   color: white; /*El texto que se encuentre en la nav sea de color blanco*/
-  height: 60px; /*Establecemos una altura al elemento*/
+  height: 90px; /*Establecemos una altura al elemento*/
+}
+h2 {
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 nav ul {
@@ -62,14 +70,14 @@ nav ul li:hover > ul {
   display: inherit;
 }
 nav ul ul li {
-  width: 100%;
+  width: 80%;
   float: none;
   position: relative;
 }
 nav ul ul ul li {
   position: relative;
-  top: -60px;
-  left: 170px;
+  top: -70px;
+  left: 150px;
 }
 
 .clearfix {
@@ -79,21 +87,21 @@ nav ul ul ul li {
 /*Para el contenido*/
 #content {
   float: left;
-  text-align: center;
-  width: calc(80% - 80px);
+  text-align: left;
+  width: calc(70% - 70px);
   min-height: 500px; /*le daremos una altura minima a este elemento*/
-  background: whitesmoke;
-  padding: 40px;
+  background: black;
+  padding: 50px;
 }
 
 #content article h1 {
-  text-align: left;
-  color: black;
+  text-align: justify;
+  color: white;
 }
 #content article p {
   margin-top: 10px;
   text-align: justify;
-  color: black;
+  color: white; /*letra*/
 }
 /*Imagenes en css*/
 .slider {
@@ -117,18 +125,18 @@ nav ul ul ul li {
 
 .slide:nth-child(1) {
   background-image: url('imagen1.jpg');
-  animation: slide 12s infinite;
+  animation: slide 15s infinite;
 }
 
 .slide:nth-child(2) {
   background-image: url('imagen2.jpg');
-  animation: slide 12s infinite;
+  animation: slide 15s infinite;
   animation-delay: 3s;
 }
 
 .slide:nth-child(3) {
   background-image: url('imagen3.jpg');
-  animation: slide 12s infinite;
+  animation: slide 15s infinite;
   animation-delay: 6s;
 }
 
@@ -159,7 +167,7 @@ nav ul ul ul li {
 /*Formato de Imagenes*/
 #cont1 {
   border-radius: 15px;
-  border: 1px solid black;
+  border: 1px solid white;
 }
 /*Animacion de*/
 .titulo {
@@ -175,7 +183,7 @@ nav ul ul ul li {
     transform: scale(1);
   }
   50% {
-    transform: scale(1.2);
+    transform: scale(1.6);
   }
   100% {
     transform: scale(1);
@@ -184,19 +192,19 @@ nav ul ul ul li {
 /*Formato con aside*/
 aside {
   float: left;
-  color: black;
+  color: white;
   width: calc(
     20% - 20px
   ); /*Funcion calc para ajustar ya que quito los 20px de cada lado*/
   min-height: 1940px; /*altura minima para el aside*/
-  background: #ecf0f1;
+  background: #06c6f7;
   padding-left: 20px; /*margenes por izquierda*/
   padding-top: 10px; /*Marjenes por derecha*/
 }
 /*Estilo al footer*/
 footer {
   background: #2471a3;
-  color: white;
+  color: black;
   text-align: center;
   height: 50px;
   line-height: 50px; /*centre verticalemnte la linea de texto*/
@@ -204,7 +212,7 @@ footer {
 }
 #fooFormulario {
   color: black;
-  background-color: whitesmoke;
+  background-color: darkorange;
   text-align: left;
   height: 300px;
 }
@@ -226,16 +234,16 @@ footer {
 }
 
 .buttonE:hover {
-  background-color: #1f618d;
-  box-shadow: 0px 3px 0px 0px #2471a3;
+  background-color: #c20f0f;
+  box-shadow: 0px 3px 0px 0px #c26e0d;
   transform: translateY(2px);
 }
 /*Imagen */
 .contIMG {
   border-radius: 10px;
   border: 1px solid black;
-  width: 500px; /* ancho del contenedor */
-  height: 500px; /* alto del contenedor */
+  width: 600px; /* ancho del contenedor */
+  height: 600px; /* alto del contenedor */
   overflow: hidden; /* ocultar lo que sobresale del contenedor */
   display: inline-block;
   margin: 0 auto;
