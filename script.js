@@ -8,5 +8,3 @@ $(document).ready(function () {
     }
   );
 });
-
-/**Funciones de validacion java script*/
